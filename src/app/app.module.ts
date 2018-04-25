@@ -16,7 +16,7 @@ import { Camera } from '@ionic-native/camera';
 
 import { Pro } from '@ionic/pro';
 
-Pro.init('80c4f581',{appVersion:'0.0.1'});
+Pro.init('80c4f581',{appVersion:'0.0.1'}); 
 
 @NgModule({
   declarations: [

@@ -13,7 +13,7 @@ export class CameraPage {
     img: ""
   }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private camera: Camera) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public camera: Camera) {
   }
 
   getPhoto(){
@@ -25,7 +25,7 @@ export class CameraPage {
     }
 
     this.camera.getPicture(options).then((imageData) => {
-      let base64Image = 'data:image/jpeg;base64' + imageData;
+      let base64Image = 'data:image/jpeg;base64,' + imageData;
       this.cam.img = base64Image;
     }, (err) => {
       console.log('Erro na câmera: ' + err);
